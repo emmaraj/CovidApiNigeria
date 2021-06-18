@@ -14,14 +14,27 @@ using System;
 using System.IO;
 
 namespace CovidApiNigeria {
+    /// <summary>
+    /// Startup Class
+    /// </summary>
     public class Startup {
+        /// <summary>
+        /// Public Construction
+        /// </summary>
+        /// <param name="configuration"></param>
         public Startup(IConfiguration configuration) {
             Configuration = configuration;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        /// This method gets called by the runtime. Use this method to add services to the container.
+        /// </summary>
+        /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services) {
 
             services.AddControllers();
@@ -53,12 +66,21 @@ namespace CovidApiNigeria {
             services.AddHangfireServer();
 
         }
-
+        /// <summary>
+        /// Handle Migration to Live 
+        /// </summary>
+        /// <param name="svp"></param>
         public void MigrateDatabaseContexts(IServiceProvider svp) {
             var applicationDbContext = svp.GetRequiredService<DatabaseContext>();
             applicationDbContext.Database.Migrate();
         }
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>
+        /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="env"></param>
+        /// <param name="dataService"></param>
+        /// <param name="svp"></param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDataService dataService, IServiceProvider svp) {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();

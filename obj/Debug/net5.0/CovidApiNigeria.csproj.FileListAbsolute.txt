@@ -7,6 +7,7 @@ C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\bin\Debug\net5.0\Covid
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\bin\Debug\net5.0\CovidApiNigeria.dll
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\bin\Debug\net5.0\ref\CovidApiNigeria.dll
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\bin\Debug\net5.0\CovidApiNigeria.pdb
+C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\bin\Debug\net5.0\CovidApiNigeria.xml
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\bin\Debug\net5.0\Hangfire.AspNetCore.dll
@@ -81,6 +82,7 @@ C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\Covid
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.csproj.CopyComplete
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.dll
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\ref\CovidApiNigeria.dll
+C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.xml
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.pdb
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.genruntimeconfig.cache
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.csprojAssemblyReference.cache
