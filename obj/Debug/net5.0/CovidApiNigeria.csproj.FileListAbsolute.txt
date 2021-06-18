@@ -83,3 +83,4 @@ C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\Covid
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\ref\CovidApiNigeria.dll
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.pdb
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.genruntimeconfig.cache
+C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.csprojAssemblyReference.cache
