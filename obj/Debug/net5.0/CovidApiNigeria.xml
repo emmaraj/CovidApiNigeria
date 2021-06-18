@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CovidApiNigeria</name>
+    </assembly>
+    <members>
+        <member name="T:CovidApiNigeria.Controllers.HomeController">
+            <summary>
+            HomeController Class
+            
+            </summary>
+        </member>
+        <member name="M:CovidApiNigeria.Controllers.HomeController.#ctor(CovidApiNigeria.Services.IDataService)">
+            <summary>
+            HomeController()
+            </summary>
+            <param name="dataService"></param>
+            <returns>
+            IEnumerable DataModel
+            </returns>
+        </member>
+        <member name="M:CovidApiNigeria.Controllers.HomeController.GetLatestData">
+            <summary>
+            Get latest from all states
+            </summary>
+            <returns>
+            IEnumerable DataModel
+            </returns>
+        </member>
+        <member name="M:CovidApiNigeria.Controllers.HomeController.GetStateData(System.String)">
+            <summary>
+            Get all data for a particular state
+            </summary>
+            <param name="state">State</param>
+            <returns>
+            IEnumerable DataModel
+            </returns>
+        </member>
+        <member name="M:CovidApiNigeria.Controllers.HomeController.GetStateDatas(System.String,System.String,System.String)">
+            <summary>
+            Get the data for a state from a period
+            </summary>
+            <param name="state">State Name</param>
+            <param name="start">Start Date</param>
+            <param name="end">End Date</param>
+            <returns>
+            IEnumerable DataModel
+            </returns>
+        </member>
+        <member name="M:CovidApiNigeria.Controllers.HomeController.GetDataByDate(System.String)">
+            <summary>
+            Get Data for a particular date
+            </summary>
+            <param name="date">Date of Incident</param>
+            <returns>
+            IEnumerable DataModel
+            </returns>
+        </member>
+        <member name="M:CovidApiNigeria.Controllers.HomeController.GetDataByDates(System.String,System.String)">
+            <summary>
+            Get National data across a date range
+            </summary>
+            <param name="start">Start Date</param>
+            <param name="end">End </param>
+            <returns>
+            IEnumerable DataModel
+            </returns>
+        </member>
+        <member name="T:CovidApiNigeria.Models.DataModel">
+            <summary>
+            Data Model Class
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.StateName">
+            <summary>
+            Name of state
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.NumberOfConfirmedCases">
+            <summary>
+            Number of Confirmed Cases in a State
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.NumberOfActiveCases">
+            <summary>
+            Number of Active Cases in a State
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.NumberOfDeaths">
+            <summary>
+            Number of Deaths in a State
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.NumberOfDischarged">
+            <summary>
+            Number of Discharged Cases in a State
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.SamplesTested">
+            <summary>
+            Number of Samples Tested at the National Level
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.TotalConfirmedCases">
+            <summary>
+            Total Number of Confirmed Cases at the National Level
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.TotalActiveCases">
+            <summary>
+            Total Number of Active Cases at the National Level
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.TotalDischarged">
+            <summary>
+            Total Number of Discharged Cases at the National Level
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.TotalDeaths">
+            <summary>
+            Total Number of Deaths at the National Level
+            </summary>
+        </member>
+        <member name="P:CovidApiNigeria.Models.DataModel.Date">
+            <summary>
+            Reporting Date
+            </summary>
+        </member>
+        <member name="T:CovidApiNigeria.Services.DataService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CovidApiNigeria.Services.DataService.#ctor(CovidApiNigeria.DbContexts.DatabaseContext)">
+            <summary>
+            
+            </summary>
+            <param name="databaseContext"></param>
+        </member>
+        <member name="M:CovidApiNigeria.Services.DataService.LatestDataAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CovidApiNigeria.Services.DataService.GetStateData(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="stateName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CovidApiNigeria.Services.DataService.GetDataByDate(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CovidApiNigeria.Services.DataService.GetDataByDate(System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CovidApiNigeria.Services.DataService.GetStateData(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="stateName"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CovidApiNigeria.Services.DataService.ScrapeData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CovidApiNigeria.Startup">
+            <summary>
+            Startup Class
+            </summary>
+        </member>
+        <member name="M:CovidApiNigeria.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Public Construction
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:CovidApiNigeria.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CovidApiNigeria.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:CovidApiNigeria.Startup.MigrateDatabaseContexts(System.IServiceProvider)">
+            <summary>
+            Handle Migration to Live 
+            </summary>
+            <param name="svp"></param>
+        </member>
+        <member name="M:CovidApiNigeria.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,CovidApiNigeria.Services.IDataService,System.IServiceProvider)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="dataService"></param>
+            <param name="svp"></param>
+        </member>
+    </members>
+</doc>
