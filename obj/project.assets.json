@@ -8072,6 +8072,7 @@
     "net5.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
       "Hangfire.AspNetCore >= 1.7.23",
+      "Hangfire.Core >= 1.7.23",
       "Hangfire.SqlServer >= 1.7.23",
       "HtmlAgilityPack >= 1.11.34",
       "Microsoft.AspNetCore.Mvc.Abstractions >= 2.2.0",
@@ -8127,6 +8128,10 @@
             "version": "[8.1.1, )"
           },
           "Hangfire.AspNetCore": {
+            "target": "Package",
+            "version": "[1.7.23, )"
+          },
+          "Hangfire.Core": {
             "target": "Package",
             "version": "[1.7.23, )"
           },

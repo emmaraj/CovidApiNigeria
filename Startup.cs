@@ -39,6 +39,8 @@ namespace CovidApiNigeria {
             services.AddDbContext<DatabaseContext>(opt => opt.UseSqlServer(
                 Configuration.GetConnectionString("connectString")
                 ));
+
+
             services.AddScoped<IDataService, DataService>();
 
             //Add Hangfire
@@ -52,14 +54,20 @@ namespace CovidApiNigeria {
 
         }
 
+        public void MigrateDatabaseContexts(IServiceProvider svp) {
+            var applicationDbContext = svp.GetRequiredService<DatabaseContext>();
+            applicationDbContext.Database.Migrate();
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDataService dataService) {
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDataService dataService, IServiceProvider svp) {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CovidApiNigeria v1"));
+
+            MigrateDatabaseContexts(svp);
+
             app.UseHttpsRedirection();
             app.UseHangfireDashboard();
             //set up recurring job to fecth data
