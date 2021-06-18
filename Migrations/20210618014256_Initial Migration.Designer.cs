@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CovidApiNigeria.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20210617234114_Initial Migration")]
+    [Migration("20210618014256_Initial Migration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

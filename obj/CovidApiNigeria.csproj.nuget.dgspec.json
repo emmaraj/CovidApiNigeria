@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[1.7.23, )"
             },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.23, )"
+            },
             "Hangfire.SqlServer": {
               "target": "Package",
               "version": "[1.7.23, )"
