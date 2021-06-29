@@ -45,7 +45,7 @@ namespace CovidApiNigeria {
                     Version = "v1",
                     Description = "API for COVID 19 Data fetched from the NCDC website",
                 });
-                var filePath = Path.Combine(PlatformServices.Default.Application.ApplicationBasePath, "CovidAPI.xml");
+                var filePath = Path.Combine(PlatformServices.Default.Application.ApplicationBasePath, "CovidApiNigeria.xml");
                 c.IncludeXmlComments(filePath);
             });
 
