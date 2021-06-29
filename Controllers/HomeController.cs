@@ -48,7 +48,10 @@ namespace CovidApiNigeria.Controllers {
         /// <summary>
         /// Get all data for a particular state
         /// </summary>
-        /// <param name="state">State</param>
+        /// <remarks>
+        /// Use the full name of a state e.g. Lagos, Bauchi, Port Harcourt
+        /// </remarks>
+        /// <param name="state">Name of State</param>
         /// <returns>
         /// IEnumerable DataModel
         /// </returns>

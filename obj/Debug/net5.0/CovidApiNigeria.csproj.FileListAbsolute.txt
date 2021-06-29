@@ -85,4 +85,3 @@ C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\ref\C
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.xml
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.pdb
 C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.genruntimeconfig.cache
-C:\Users\Raj\source\repos\CovidApiNigeria\CovidApiNigeria\obj\Debug\net5.0\CovidApiNigeria.csprojAssemblyReference.cache

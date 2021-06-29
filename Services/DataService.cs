@@ -111,7 +111,7 @@ namespace CovidApiNigeria.Services {
             //the previous day's date
             DateTime yesterdaysDate = DateTime.Today.AddDays(-1);
 
-            if (dataDate.Equals(yesterdaysDate)) {
+            if (dataDate.Equals(yesterdaysDate)  && databaseContext.CovidNigeriaData.Any(o => o.Date != yesterdaysDate)) {
                 //select 
                 var headers = document.DocumentNode.SelectNodes("div[div[@class='card-body']] | //h2[@class = 'text-right text-white']");
 
