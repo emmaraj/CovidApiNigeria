@@ -6,8 +6,10 @@ This API was built to make available COVID19 for Nigeria from the first day of t
 Link: https://covidnigeria.azurewebsites.net/swagger/index.html <br /><br />
 
 <h5>Consuming the API</h5>
- The date parameters take a date in the following format only DD-MM-YYYY.
- ![Consuming](https://user-images.githubusercontent.com/25485036/154559828-ded9e2ab-3fdc-4e78-9d1f-9ac9d9442afc.JPG)
+ The date parameters take a date in the following format only DD-MM-YYYY. <br /><br />
+ 
+
+![Consuming](https://user-images.githubusercontent.com/25485036/154560152-2fdbb97f-dc26-49c1-8963-a3454cdf8f2b.JPG)
 
  <br /><br />
  
